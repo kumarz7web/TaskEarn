@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TaskEarn - Withdraw</title>
+
+<link rel="stylesheet" href="css/withdraw.css">
+
+</head>
+<body>
+
+<header class="topbar">
+
+<div>
+
+<h2>💸 Withdraw</h2>
+
+<p>Transfer your earnings safely</p>
+
+</div>
+
+<a href="dashboard.html" class="home-btn">🏠 Dashboard</a>
+
+</header>
+
+<div class="container">
+
+<!-- Wallet Balance -->
+
+<div class="wallet-card">
+
+<h3>Available Balance</h3>
+
+<h1 id="walletBalance">₹0.00</h1>
+
+<p>Minimum Withdraw ₹100</p>
+
+</div>
+
+<!-- Withdraw Form -->
+
+<div class="form-card">
+
+<h3>💸 Withdraw Request</h3>
+
+<input
+type="number"
+id="amount"
+placeholder="Enter Amount">
+
+<input
+type="text"
+id="upi"
+placeholder="Enter UPI ID">
+
+<button id="withdrawBtn">
+🚀 Request Withdraw
+</button>
+
+</div>
+
+<!-- Info Card -->
+
+<div class="info-card">
+
+<h3>📢 Important</h3>
+
+<p>• Minimum Withdraw: ₹100</p>
+
+<p>• Processing Time: 24-48 Hours</p>
+
+<p>• Payment Method: UPI</p>
+
+</div>
+
+</div>
+
+<!-- Bottom Navigation -->
+
+<nav class="bottom-nav">
+
+<a href="dashboard.html">
+🏠
+<span>Home</span>
+</a>
+
+<a href="tasks.html">
+📋
+<span>Tasks</span>
+</a>
+
+<a href="wallet.html">
+💰
+<span>Wallet</span>
+</a>
+
+<a href="profile.html">
+👤
+<span>Profile</span>
+</a>
+
+</nav>
+
+<script type="module" src="js/withdraw.js"></script>
+
+</body>
+</html>

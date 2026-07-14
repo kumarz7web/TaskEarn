@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TaskEarn - Profile</title>
+
+<link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<div>
+
+<h2>👤 My Profile</h2>
+
+<p>Manage your account</p>
+
+</div>
+
+<a href="dashboard.html" class="home-btn">
+🏠 Dashboard
+</a>
+
+</header>
+
+<div class="container">
+
+<!-- ========================= -->
+<!-- Profile Card -->
+<!-- ========================= -->
+
+<div class="profile-card">
+
+<img
+id="profileImage"
+src="https://via.placeholder.com/120"
+alt="Profile">
+
+<h2 id="userName">Loading...</h2>
+
+<p id="userEmail">Loading...</p>
+
+<p id="userBadge">🏆 None</p>
+
+<button id="editNameBtn">
+✏️ Edit Name
+</button>
+
+</div>
+
+<!-- ========================= -->
+<!-- Email Status -->
+<!-- ========================= -->
+
+<div class="info-card">
+
+<h3>📧 Email Status</h3>
+
+<p id="emailStatus">
+Checking...
+</p>
+
+</div>
+
+<!-- ========================= -->
+<!-- XP Progress -->
+<!-- ========================= -->
+
+<div class="action-card">
+
+<h3>⭐ XP Progress</h3>
+
+<div class="xp-bar">
+
+<div id="xpFill"></div>
+
+</div>
+
+<p id="xpProgress">
+
+0 / 100 XP
+
+</p>
+
+</div>
+
+<!-- ========================= -->
+<!-- Stats -->
+<!-- ========================= -->
+
+<div class="stats-grid">
+
+<div class="stat-card">
+<h4>💰 Wallet</h4>
+<h2 id="walletBalance">₹0</h2>
+</div>
+
+<div class="stat-card">
+<h4>📋 Tasks</h4>
+<h2 id="completedTasks">0</h2>
+</div>
+
+<div class="stat-card">
+<h4>👥 Referrals</h4>
+<h2 id="referrals">0</h2>
+</div>
+
+<div class="stat-card">
+<h4>⭐ Level</h4>
+<h2 id="level">1</h2>
+</div>
+
+<div class="stat-card">
+<h4>⚡ XP</h4>
+<h2 id="xp">0</h2>
+</div>
+
+<div class="stat-card">
+<h4>🏆 Badge</h4>
+<h2 id="badge">None</h2>
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Referral -->
+<!-- ========================= -->
+
+<div class="action-card">
+
+<h3>👥 Referral</h3>
+
+<p>Your Referral Code</p>
+
+<h2 id="referralCode">
+Loading...
+</h2>
+
+<button id="copyReferral">
+📋 Copy Referral Code
+</button>
+
+<button id="shareReferral">
+📤 Share Referral
+</button>
+
+</div>
+
+  <div class="action-card">
+
+<h3>💰 Earnings Overview</h3>
+
+<p><strong>Total Earned</strong></p>
+<h2 id="totalEarned">₹0</h2>
+
+<p><strong>Total Withdraw</strong></p>
+<h2 id="totalWithdraw">₹0</h2>
+
+<p><strong>Current Wallet</strong></p>
+<h2 id="currentWallet">₹0</h2>
+
+  </div>
+  
+<!-- ========================= -->
+<!-- Account Info -->
+<!-- ========================= -->
+
+<div class="action-card">
+
+<h3>🔥 Account Info</h3>
+
+<p><strong>💸 Referral Earnings</strong></p>
+<h2 id="referralReward">₹0</h2>
+
+<p><strong>🔥 Login Streak</strong></p>
+<h2 id="loginStreak">0 Day</h2>
+
+<p><strong>📅 Joined</strong></p>
+<h2 id="joinDate">Loading...</h2>
+
+</div>
+
+<!-- ========================= -->
+<!-- Quick Actions -->
+<!-- ========================= -->
+
+<div class="action-card">
+
+<h3>⚡ Quick Actions</h3>
+
+<button onclick="window.location.href='history.html'">
+📜 Transaction History
+</button>
+
+<button onclick="window.location.href='withdraw.html'">
+💸 Withdraw Money
+</button>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Bottom Navigation -->
+<!-- ========================= -->
+
+<nav class="bottom-nav">
+
+<a href="dashboard.html">
+🏠
+<span>Home</span>
+</a>
+
+<a href="tasks.html">
+📋
+<span>Tasks</span>
+</a>
+
+<a href="wallet.html">
+💰
+<span>Wallet</span>
+</a>
+
+<a href="profile.html" class="active">
+👤
+<span>Profile</span>
+</a>
+
+</nav>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/profile.js"></script>
+
+</body>
+</html>

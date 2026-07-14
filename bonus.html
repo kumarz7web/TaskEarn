@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TaskEarn - Daily Bonus</title>
+
+<link rel="stylesheet" href="css/bonus.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<div>
+
+<h2>🎁 Daily Bonus</h2>
+
+<p>Claim your reward every day</p>
+
+</div>
+
+<a href="dashboard.html" class="home-btn">
+🏠 Dashboard
+</a>
+
+</header>
+
+<div class="container">
+
+<!-- Current Bonus -->
+
+<div class="bonus-card">
+
+<h3 id="currentDay">
+Day 1
+</h3>
+
+<h1 id="todayReward">
+₹5
+</h1>
+
+<p id="bonusStatus">
+Claim your daily reward now!
+</p>
+
+<button id="claimBonus">
+🎁 Claim Bonus
+</button>
+
+</div>
+
+<!-- Reward Progress -->
+
+<div class="reward-card">
+
+<h3>🔥 7 Day Reward Track</h3>
+
+<div class="reward-grid">
+
+<div class="reward-item" id="day1">
+<h4>Day 1</h4>
+<h2>₹5</h2>
+</div>
+
+<div class="reward-item" id="day2">
+<h4>Day 2</h4>
+<h2>₹10</h2>
+</div>
+
+<div class="reward-item" id="day3">
+<h4>Day 3</h4>
+<h2>₹15</h2>
+</div>
+
+<div class="reward-item" id="day4">
+<h4>Day 4</h4>
+<h2>₹20</h2>
+</div>
+
+<div class="reward-item" id="day5">
+<h4>Day 5</h4>
+<h2>₹25</h2>
+</div>
+
+<div class="reward-item" id="day6">
+<h4>Day 6</h4>
+<h2>₹30</h2>
+</div>
+
+<div class="reward-item special" id="day7">
+<h4>Day 7 👑</h4>
+<h2>₹35</h2>
+</div>
+
+</div>
+
+</div>
+
+<!-- Current Streak -->
+
+<div class="info-card">
+
+<h3>🔥 Current Streak</h3>
+
+<h1 id="currentStreak">
+1 Day
+</h1>
+
+<p>
+Claim every day to complete the reward cycle.
+</p>
+
+</div>
+
+<!-- Bonus Rules -->
+
+<div class="info-card">
+
+<h3>📢 Daily Bonus Rules</h3>
+
+<p>✅ One bonus every 24 hours.</p>
+
+<p>💰 Reward is added directly to your wallet.</p>
+
+<p>🔥 Complete all 7 days to earn maximum reward.</p>
+
+<p>🔄 After Day 7 the cycle automatically starts again.</p>
+
+</div>
+
+</div>
+
+<!-- Bottom Navigation -->
+
+<nav class="bottom-nav">
+
+<a href="dashboard.html">
+
+🏠
+
+<span>Home</span>
+
+</a>
+
+<a href="tasks.html">
+
+📋
+
+<span>Tasks</span>
+
+</a>
+
+<a href="wallet.html">
+
+💰
+
+<span>Wallet</span>
+
+</a>
+
+<a href="profile.html">
+
+👤
+
+<span>Profile</span>
+
+</a>
+
+</nav>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/bonus.js"></script>
+
+</body>
+
+</html>

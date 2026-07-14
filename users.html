@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TaskEarn - Users</title>
+
+<link rel="stylesheet" href="css/users.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<div>
+
+<h2>👥 User Management</h2>
+
+<p>Manage all registered users</p>
+
+</div>
+
+<a href="admin.html" class="home-btn">
+⬅ Admin
+</a>
+
+</header>
+
+<div class="container">
+
+<input
+type="text"
+id="searchUser"
+placeholder="🔍 Search User">
+
+<div id="usersList">
+
+Loading Users...
+
+</div>
+
+</div>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/users.js"></script>
+
+</body>
+</html>

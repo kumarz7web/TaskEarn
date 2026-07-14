@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TaskEarn - Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+<body>
+
+<header class="topbar">
+
+<div class="logo">
+<h2>💰 TaskEarn</h2>
+<p>Welcome Back 👋</p>
+</div>
+
+<div class="header-right">
+
+<div class="notify-box">
+
+<a href="notifications.html" class="notify-btn">
+
+🔔
+
+<span id="notifyCount">0</span>
+
+</a>
+
+</div>
+
+<button id="themeBtn">🌙</button>
+
+<button id="logoutBtn">Logout</button>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<!-- Hero Card -->
+
+<div class="card hero-card">
+
+<div class="profile-header">
+
+<div class="avatar">
+👤
+</div>
+
+<div>
+<h2>Hello,</h2>
+<h1 id="username">Loading...</h1>
+</div>
+
+<div class="level-badge">
+⭐ Lv.1
+</div>
+
+</div>
+
+<p class="subtitle">
+Keep completing tasks and grow your earnings 🚀
+</p>
+
+<div class="live-info">
+<p id="greeting">🌞 Good Morning</p>
+<p id="todayDate">Loading Date...</p>
+<p id="liveTime">00:00:00</p>
+</div>
+
+<div class="stats">
+
+<div class="mini-card">
+<h4>⭐ Level</h4>
+<p>1</p>
+</div>
+
+<div class="mini-card">
+<h4>🔥 Streak</h4>
+<p>0 Day</p>
+</div>
+
+</div>
+
+<div class="progress-box">
+
+<div class="progress-bar">
+<div class="progress-fill"></div>
+</div>
+
+<p>XP Progress 20%</p>
+
+</div>
+
+</div>
+
+<!-- Wallet -->
+
+<div class="card wallet-card">
+
+<h3>💰 Wallet Balance</h3>
+
+<h1 id="wallet">₹0</h1>
+
+<p>Available Balance</p>
+
+</div>
+
+<!-- Announcement -->
+
+<div class="card announce-card">
+
+<h3>📢 Announcement</h3>
+
+<p>
+🎉 Welcome to TaskEarn V3. More exciting features are coming soon!
+</p>
+
+</div>
+
+<!-- Quick Stats -->
+
+<div class="stats-grid">
+
+<div class="stat-card">
+<h4>Total Earned</h4>
+<h2 id="totalEarned">₹0</h2>
+</div>
+
+<div class="stat-card">
+<h4>Completed</h4>
+<h2 id="completedTasks">0</h2>
+</div>
+
+<div class="stat-card">
+<h4>Bonus</h4>
+<h2 id="bonusEarned">₹0</h2>
+</div>
+
+<div class="stat-card">
+<h4>Referral</h4>
+<h2 id="referrals">0</h2>
+</div>
+
+</div>
+
+  <!-- Referral Card -->
+
+<div class="card">
+
+<h3>👥 Referral Program</h3>
+
+<p>Invite friends and earn ₹20 per referral.</p>
+
+<div style="
+background:rgba(255,255,255,.08);
+padding:15px;
+border-radius:12px;
+margin-top:10px;
+text-align:center;
+">
+
+<h2 id="myReferralCode">Loading...</h2>
+
+<button id="copyReferralBtn">
+📋 Copy Code
+</button>
+
+<button id="shareReferralBtn">
+📤 Share on WhatsApp
+</button>
+  
+</div>
+
+<div class="stats-grid" style="margin-top:15px;">
+
+<div class="stat-card">
+<h4>Total Referrals</h4>
+<h2 id="referrals">0</h2>
+</div>
+
+<div class="stat-card">
+<h4>Referral Earned</h4>
+<h2 id="referralReward">₹0</h2>
+</div>
+
+</div>
+
+</div>
+
+<!-- Daily Goal -->
+
+<div class="card goal-card">
+
+<h3>🎯 Daily Goal</h3>
+
+<p>Today's Target: ₹100</p>
+
+<div class="goal-bar">
+
+<div class="goal-fill"></div>
+
+</div>
+
+<p class="goal-text">
+₹20 / ₹100 Completed (20%)
+</p>
+
+</div>
+
+<!-- Achievements -->
+
+<div class="card">
+
+<!-- User Rank -->
+
+<div class="card rank-card">
+
+<!-- Daily Login Streak -->
+
+<div class="card streak-card">
+
+<h3>🔥 Daily Login Streak</h3>
+
+<h1 id="streakCount">0 🔥</h1>
+
+<p>Login every day to increase your streak!</p>
+
+</div>
+  
+<h3>🏆 User Rank</h3>
+
+<h2 id="userRank">Beginner</h2>
+
+<p>Complete more tasks to reach <b>Pro</b> 🚀</p>
+
+</div>
+  
+<h3>🏆 Achievements</h3>
+
+<div class="badge-grid">
+
+<div class="badge">
+🥉
+<p>Bronze</p>
+</div>
+
+<div class="badge">
+🥈
+<p>Silver</p>
+</div>
+
+<div class="badge">
+🥇
+<p>Gold</p>
+</div>
+
+<div class="badge">
+💎
+<p>Diamond</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- Recent Activity -->
+
+<div class="card">
+
+<h3>⚡ Recent Activity</h3>
+
+<div class="activity">
+<p>✅ Login Successfully</p>
+<span>Just Now</span>
+</div>
+
+<div class="activity">
+<p>🎁 Daily Bonus Available</p>
+<span>Today</span>
+</div>
+
+<div class="activity">
+<p>📋 Complete Tasks to Earn More</p>
+<span>Active</span>
+</div>
+
+</div>
+
+<!-- Quick Menu -->
+
+<div class="grid">
+
+<a href="tasks.html" class="box">
+📋
+<span>Tasks</span>
+</a>
+
+<a href="wallet.html" class="box">
+💰
+<span>Wallet</span>
+</a>
+
+<a href="bonus.html" class="box">
+🎁
+<span>Bonus</span>
+</a>
+
+<a href="spin.html" class="box">
+🎡
+<span>Spin</span>
+</a>
+
+<a href="notifications.html" class="box">
+🔔
+<span>Notifications</span>
+</a>
+  
+<a href="withdraw.html" class="box">
+💸
+<span>Withdraw</span>
+</a>
+
+<a href="history.html" class="box">
+📜
+<span>History</span>
+</a>
+
+<a href="profile.html" class="box">
+👤
+<span>Profile</span>
+</a>
+
+<a href="admin.html" class="box">
+👑
+<span>Admin</span>
+</a>
+
+<a href="index.html" class="box">
+🏠
+<span>Home</span>
+</a>
+
+<a href="missions.html" class="box">
+🎯
+<span>Missions</span>
+</a>
+
+  <a href="redeem.html" class="box">
+🎟️
+<span>Redeem</span>
+  </a>
+<a href="scratch.html" class="box">
+🎁
+<span>Scratch</span>
+</a>
+  <a href="leaderboard.html" class="box">
+🏆
+<span>Leaderboard</span>
+  </a>
+</div>
+
+</div>
+
+<!-- Bottom Navigation -->
+
+<nav class="bottom-nav">
+
+<a href="dashboard.html" class="nav-item active">
+🏠
+<span>Home</span>
+</a>
+
+<a href="tasks.html" class="nav-item">
+📋
+<span>Tasks</span>
+</a>
+
+<a href="wallet.html" class="nav-item">
+💰
+<span>Wallet</span>
+</a>
+
+<a href="profile.html" class="nav-item">
+👤
+<span>Profile</span>
+</a>
+
+</nav>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>

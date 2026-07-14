@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TaskEarn - Admin Panel</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+<body>
+
+<header class="topbar">
+
+<div>
+
+<h2>👑 Admin Panel</h2>
+
+<p>Manage Your Platform</p>
+
+</div>
+
+<a href="dashboard.html" class="home-btn">
+🏠 Dashboard
+</a>
+
+</header>
+
+<div class="container">
+
+<!-- Live Admin Stats -->
+
+<div class="admin-stats">
+
+<div class="stat-card">
+<h3>👥 Total Users</h3>
+<h2 id="totalUsers">0</h2>
+</div>
+
+<div class="stat-card">
+<h3>⏳ Pending</h3>
+<h2 id="pendingWithdraw">0</h2>
+</div>
+
+<div class="stat-card">
+<h3>✅ Approved</h3>
+<h2 id="approvedWithdraw">0</h2>
+</div>
+
+<div class="stat-card">
+<h3>💸 Total Payout</h3>
+<h2 id="totalPayout">₹0</h2>
+</div>
+
+<div class="stat-card">
+<h3>🎡 Total Spins</h3>
+<h2 id="totalSpins">0</h2>
+</div>
+
+<div class="stat-card">
+<h3>🎁 Scratch Claims</h3>
+<h2 id="totalScratch">0</h2>
+</div>
+
+<div class="stat-card">
+<h3>📋 Total Tasks</h3>
+<h2 id="totalTasks">0</h2>
+</div>
+
+<div class="stat-card">
+<h3>💰 Platform Earnings</h3>
+<h2 id="platformEarning">₹0</h2>
+</div>
+
+</div>
+
+<!-- Summary -->
+
+<div class="summary-card">
+
+<h3>Total Pending Requests</h3>
+
+<h1 id="pendingCount">0</h1>
+
+<p>Requests waiting for approval</p>
+
+</div>
+
+<!-- Withdraw Requests -->
+
+<div class="request-card">
+
+<h3>💸 Pending Withdraw Requests</h3>
+
+<div id="requests">
+
+Loading...
+
+</div>
+
+</div>
+
+<!-- Broadcast Notification -->
+
+<div class="request-card">
+
+<h3>📢 Broadcast Notification</h3>
+
+<input
+type="text"
+id="notifyTitle"
+placeholder="Notification Title">
+
+<textarea
+id="notifyMessage"
+placeholder="Notification Message"
+rows="5"></textarea>
+
+<button id="sendNotificationBtn">
+
+📤 Send To All Users
+
+</button>
+
+</div>
+
+<!-- Add New Task -->
+
+<div class="request-card">
+
+<h3>➕ Add New Task</h3>
+
+<input
+type="text"
+id="taskTitle"
+placeholder="Task Title">
+
+<input
+type="text"
+id="taskDescription"
+placeholder="Task Description">
+
+<input
+type="number"
+id="taskReward"
+placeholder="Reward">
+
+<input
+type="url"
+id="taskLink"
+placeholder="Task Link">
+
+<select id="taskCategory">
+
+<option value="Website">🌐 Website</option>
+
+<option value="Video">📺 Video</option>
+
+<option value="Survey">📋 Survey</option>
+
+</select>
+
+<label style="display:block;margin:15px 0;">
+
+<input
+type="checkbox"
+id="taskActive"
+checked>
+
+Active Task
+
+</label>
+
+<button id="addTaskBtn">
+
+➕ Add Task
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Bottom Navigation -->
+
+<nav class="bottom-nav">
+
+<a href="dashboard.html">
+
+🏠
+
+<span>Home</span>
+
+</a>
+
+<a href="history.html">
+
+📜
+
+<span>History</span>
+
+</a>
+
+<a href="wallet.html">
+
+💰
+
+<span>Wallet</span>
+
+</a>
+
+<a href="admin.html" class="active">
+
+👑
+
+<span>Admin</span>
+
+</a>
+
+</nav>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TaskEarn - Daily Missions</title>
+
+<link rel="stylesheet" href="css/missions.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<h2>🎯 Daily Missions</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+
+</header>
+
+<div class="container">
+
+<div class="mission-card">
+
+<h3>🔥 Daily Login</h3>
+
+<p>Reward: ₹5 + 5 XP</p>
+
+<div class="progress">
+<div class="progress-fill" id="loginProgress"></div>
+</div>
+
+<button id="claimLogin">
+🎁 Claim Reward
+</button>
+
+</div>
+
+<div class="mission-card">
+
+<h3>📋 Complete 3 Tasks</h3>
+
+<p>Reward: ₹10 + 10 XP</p>
+
+<div class="progress">
+<div class="progress-fill" id="taskProgress"></div>
+</div>
+
+<p id="taskCount">0 / 3</p>
+
+<button id="claimTask" disabled>
+🎁 Claim Reward
+</button>
+
+</div>
+
+<div class="mission-card">
+
+<h3>👥 Refer 1 Friend</h3>
+
+<p>Reward: ₹20 + 20 XP</p>
+
+<div class="progress">
+<div class="progress-fill" id="referralProgress"></div>
+</div>
+
+<p id="referralCount">0 / 1</p>
+
+<button id="claimReferral" disabled>
+🎁 Claim Reward
+</button>
+
+</div>
+
+<div class="mission-card">
+
+<h3>🎡 Spin Wheel</h3>
+
+<p>Reward: ₹5 + 5 XP</p>
+
+<div class="progress">
+<div class="progress-fill" id="spinProgress"></div>
+</div>
+
+<button id="claimSpin" disabled>
+🎁 Claim Reward
+</button>
+
+</div>
+
+</div>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/missions.js"></script>
+
+</body>
+
+</html>

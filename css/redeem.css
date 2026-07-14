@@ -1,0 +1,71 @@
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:#fff;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:#1e293b;
+}
+
+.topbar a{
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+padding:20px;
+max-width:500px;
+margin:auto;
+}
+
+.redeem-card,
+.info-card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+
+.redeem-card h2,
+.info-card h3{
+margin-top:0;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:15px 0;
+border:none;
+border-radius:10px;
+font-size:16px;
+box-sizing:border-box;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#2563eb;
+color:#fff;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+.info-card p{
+margin:10px 0;
+line-height:1.5;
+}
